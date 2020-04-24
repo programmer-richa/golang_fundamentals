@@ -1,5 +1,5 @@
 /*
-Package main that works according to the user choice.
+Package main that works according to the choice.
 */
 
 package main
