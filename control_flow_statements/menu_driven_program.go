@@ -16,7 +16,7 @@ const (
 	table
 	exit
 	leapLbl       = "Test for leap year"
-	palindromeLbl = "Test for Palindrom"
+	palindromeLbl = "Test for Palindrome"
 	digitsLbl     = "Calculate Sum of Digits"
 	tableLbl      = "Print Table"
 	exitLbl       = "Exit"
