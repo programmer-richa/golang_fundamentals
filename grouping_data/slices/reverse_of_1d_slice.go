@@ -11,7 +11,7 @@ func main() {
 	// slice to store5 values
 	var arr = []int{15, 10, 5, 20, 1}
 	arr = reverseSlice(arr)
-	fmt.Printf("Reverse of array: %v", arr)
+	fmt.Printf("Reverse of slice: %v", arr)
 }
 
 func reverseSlice(arr []int) []int {
