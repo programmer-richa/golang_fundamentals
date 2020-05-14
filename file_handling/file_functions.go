@@ -28,8 +28,8 @@ func CreateFile(fileName string) *os.File {
 	return file
 }
 
-// WriteFile writes data to the file.
-func WriteFile(file *os.File, data string) {
+// WriteString writes data to the file.
+func WriteString(file *os.File, data string) {
 	// Truncates if file already exists, be careful!
 	len, err := file.WriteString(data)
 
@@ -38,6 +38,17 @@ func WriteFile(file *os.File, data string) {
 	}
 	fmt.Printf("\nLength: %d bytes", len)
 	fmt.Printf("\nFile Name: %s", file.Name())
+}
+
+// WriteByte writes data to the file.
+func WriteByte(fileName string, data []byte) {
+	// Truncates if file already exists, be careful!
+	err := ioutil.WriteFile(fileName, data, 0644)
+
+	if err != nil {
+		log.Fatalf("Failed writing to file: %s", err)
+	}
+	fmt.Printf("\nFile Name: %s", fileName)
 }
 
 //CloseFile closes the file
