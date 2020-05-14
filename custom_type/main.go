@@ -1,7 +1,9 @@
 // Package main demonstrates working of custom type.
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Entry point of program.
 func main() {
